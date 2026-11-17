@@ -248,6 +248,21 @@
   /* ---------- бегущие отзывы: дублируем карточки для бесшовной ленты ---------- */
   $$(".rv-track").forEach((t) => [...t.children].forEach((c) => { const k = c.cloneNode(true); k.setAttribute("aria-hidden", "true"); t.append(k); }));
 
+  /* ---------- большая надпись в подвале: подгоняем под ширину контейнера ----------
+     Работает с любым шрифтом и любым названием компании */
+  const big = $(".footer__big");
+  const fitBig = () => {
+    if (!big) return;
+    big.style.fontSize = "100px";
+    const range = document.createRange(); range.selectNodeContents(big);
+    const textW = range.getBoundingClientRect().width, boxW = big.clientWidth;
+    if (textW && boxW) big.style.fontSize = Math.floor(100 * boxW / textW * 0.98) + "px";
+  };
+  fitBig();
+  addEventListener("resize", fitBig, { passive: true });
+  addEventListener("load", fitBig);
+  if (document.fonts) document.fonts.ready.then(fitBig);
+
   /* ---------- аккордеон ---------- */
   $$(".acc__btn").forEach((btn) => btn.addEventListener("click", () => {
     const open = btn.getAttribute("aria-expanded") === "true";

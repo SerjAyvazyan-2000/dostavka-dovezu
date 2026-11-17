@@ -375,7 +375,8 @@ ul, ol { padding: 0; list-style: none; }
 
 /* ---------- footer ---------- */
 .footer { padding: 60px 0 30px; font-size: 15px; overflow: hidden; }
-.footer__big { font: 400 clamp(80px, 21vw, 330px)/.82 var(--f-display); letter-spacing: -.03em; color: var(--ink); text-align: center; margin-bottom: 60px; user-select: none; }
+.footer__big { font: 400 14vw/.86 var(--f-display); letter-spacing: -.02em; color: var(--ink); text-align: center; white-space: nowrap; margin-bottom: 60px; padding-top: .04em; user-select: none; }
+@media (min-width: 1400px) { .footer__big { font-size: 190px; } }
 .footer__big { background: linear-gradient(180deg, var(--ink) 55%, var(--accent) 55%); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .footer__grid { display: grid; grid-template-columns: 1fr 1fr 1.1fr 1.4fr; gap: 40px; padding-top: 40px; border-top: 1.5px solid var(--ink); }
 .footer h4 { font: 600 13px/1 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
