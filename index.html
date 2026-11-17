@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ДОВЕЗУ — курьерская доставка на авто за 60 минут</title>
+  <meta name="description" content="Доставка документов, посылок и грузов по городу на легковых авто, каблуках и газелях. Курьер выезжает за 15 минут, онлайн-отслеживание.">
+  <meta name="theme-color" content="#F2EFE6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ДОВЕЗУ — доставка по городу за 60 минут">
+  <meta property="og:description" content="Курьеры на авто: от конверта до газели. Цена известна заранее.">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ДОВЕЗУ — курьерская доставка",
+    "telephone": "+7 900 000-00-00",
+    "openingHours": "Mo-Su 07:00-23:00",
+    "areaServed": "Москва",
+    "priceRange": "от 390 ₽"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__in">
+      <a href="#top" class="logo" aria-label="ДОВЕЗУ — на главную">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M14 22h22v20H14zM36 28h8l6 7v7H36z" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"/><circle cx="22" cy="44" r="4.5" fill="currentColor"/><circle cx="43" cy="44" r="4.5" fill="currentColor"/></svg></span>
+        <span class="logo__text">ДОВЕЗУ</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#what">Что везём</a>
+        <a href="#track">Отслеживание</a>
+        <a href="#tariffs">Тарифы</a>
+        <a href="#how">Как работаем</a>
+        <a href="#business">Бизнесу</a>
+        <a href="#drivers">Водителям</a>
+        <div class="nav__foot">
+          <a href="#order" class="btn btn--accent btn--wide"><span>Оформить доставку</span></a>
+          <a href="tel:+79000000000" class="nav__tel">+7 (900) 000-00-00</a>
+        </div>
+      </nav>
+
+      <div class="header__right">
+        <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+        <a href="#order" class="btn btn--ink btn--sm header__cta"><span>Заказать</span></a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__grid-bg" aria-hidden="true" data-parallax="0.12"></div>
+
+      <svg class="route" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path id="routePath" class="route__base" d="M-40 800 C 220 800, 470 805, 700 790 S 1010 720, 1110 600 S 1190 480, 1250 470 S 1400 400, 1500 330"/>
+        <path class="route__line" d="M-40 800 C 220 800, 470 805, 700 790 S 1010 720, 1110 600 S 1190 480, 1250 470 S 1400 400, 1500 330"/>
+        <g class="route__pin route__pin--a" transform="translate(700 790)"><circle r="18"/><text y="6">A</text></g>
+        <g class="route__pin route__pin--b" transform="translate(1250 470)"><circle r="18"/><text y="6">B</text></g>
+        <g class="route__van">
+          <g transform="translate(-30 -18)">
+            <rect x="0" y="4" width="40" height="26" rx="5" fill="#111"/>
+            <path d="M40 10h10l10 10v10H40z" fill="#111"/>
+            <rect x="44" y="13" width="9" height="7" rx="1.5" fill="#F2EFE6"/>
+            <rect x="6" y="11" width="22" height="4" rx="2" fill="#FF5A1F"/>
+            <circle cx="12" cy="31" r="5.5" fill="#FF5A1F" stroke="#111" stroke-width="3"/>
+            <circle cx="49" cy="31" r="5.5" fill="#FF5A1F" stroke="#111" stroke-width="3"/>
+          </g>
+          <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1">
+            <mpath href="#routePath"/>
+          </animateMotion>
+        </g>
+      </svg>
+
+      <div class="hero__boxes" aria-hidden="true">
+        <span class="pbox pbox--1" data-depth="0.6"></span>
+        <span class="pbox pbox--2" data-depth="1.1"></span>
+        <span class="pbox pbox--3" data-depth="0.35"></span>
+      </div>
+
+      <div class="container hero__content">
+        <p class="tag" data-reveal><i></i>Курьеры на линии с 7:00 до 23:00</p>
+        <h1 class="hero__title" data-split>Довезём <span class="hl">за 60</span> минут.<br>Без «завтра».</h1>
+        <div class="hero__bottom">
+          <p class="hero__lead" data-reveal style="--d:.4s">Документы, посылки, техника и стройматериалы. Легковые, каблуки и газели по всему городу. Курьер выезжает через 15 минут после заказа.</p>
+          <div class="hero__cta" data-reveal style="--d:.5s">
+            <a href="#order" class="btn btn--accent"><span>Оформить доставку</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#what" class="btn btn--line"><span>Рассчитать цену</span></a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="order-card" data-reveal style="--d:.7s" aria-label="Пример заказа">
+        <div class="order-card__top"><span>Заказ <b>№ 4821</b></span><span class="pill pill--live">В пути</span></div>
+        <div class="order-card__route">
+          <div><small>Откуда</small><b>ул. Тверская, 12</b></div>
+          <div><small>Куда</small><b>Ленинский пр., 64</b></div>
+        </div>
+        <div class="order-card__bar"><span></span></div>
+        <div class="order-card__foot">
+          <span class="avatar">АК</span>
+          <div><b>Артём, Lada Largus</b><small>прибудет через <span data-eta>18</span> мин</small></div>
+        </div>
+      </aside>
+
+      <div class="hero__counter" data-reveal style="--d:.8s">
+        <b data-today>248</b><span>доставок<br>сегодня</span>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Документы</span><span>Цветы</span><span>Техника</span><span>Стройматериалы</span><span>Мебель</span><span>Запчасти</span><span>Заказы с маркетплейсов</span><span>Подарки</span>
+        <span>Документы</span><span>Цветы</span><span>Техника</span><span>Стройматериалы</span><span>Мебель</span><span>Запчасти</span><span>Заказы с маркетплейсов</span><span>Подарки</span>
+      </div>
+    </div>
+
+    <!-- ============ WHAT (3D box) ============ -->
+    <section class="section what" id="what">
+      <div class="container">
+        <div class="head">
+          <span class="head__num" data-reveal>01</span>
+          <h2 class="h2" data-reveal>Что везём? <br>Подберём машину сами</h2>
+        </div>
+
+        <div class="what__grid">
+          <div class="stage" data-reveal>
+            <div class="stage__floor"></div>
+            <div class="cube" id="cube">
+              <div class="cube__f cube__f--front"></div><div class="cube__f cube__f--back"></div>
+              <div class="cube__f cube__f--left"></div><div class="cube__f cube__f--right"></div>
+              <div class="cube__f cube__f--top"></div><div class="cube__f cube__f--bottom"></div>
+            </div>
+            <span class="stage__label" id="cubeLabel">до 1 кг</span>
+          </div>
+
+          <div class="what__side">
+            <div class="sizes" role="tablist" aria-label="Размер груза" data-reveal>
+              <button role="tab" class="size is-active" aria-selected="true" data-size="0"><b>Конверт</b><small>до 1 кг</small></button>
+              <button role="tab" class="size" aria-selected="false" data-size="1"><b>Коробка</b><small>до 10 кг</small></button>
+              <button role="tab" class="size" aria-selected="false" data-size="2"><b>Крупное</b><small>до 300 кг</small></button>
+              <button role="tab" class="size" aria-selected="false" data-size="3"><b>Габарит</b><small>до 1,5 т</small></button>
+            </div>
+
+            <div class="match" data-reveal aria-live="polite">
+              <div class="match__row"><span>Машина</span><b data-m="car">Легковой автомобиль</b></div>
+              <div class="match__row"><span>Подходит для</span><b data-m="for">документы, ключи, договоры</b></div>
+              <div class="match__row"><span>Время</span><b data-m="time">от 45 минут</b></div>
+              <div class="match__price"><span>Цена от</span><b><span data-m="price">390</span> ₽</b></div>
+              <a href="#order" class="btn btn--ink btn--wide"><span>Заказать доставку</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRACKING ============ -->
+    <section class="section track" id="track">
+      <div class="container track__grid">
+        <div>
+          <div class="head head--light">
+            <span class="head__num" data-reveal>02</span>
+            <h2 class="h2" data-reveal>Видно каждый поворот</h2>
+          </div>
+          <p class="lead" data-reveal>Ссылка на отслеживание приходит в SMS сразу после заказа. Вы видите, где курьер, и получаете фото при вручении.</p>
+          <form class="track__form" id="trackForm" data-reveal>
+            <label class="visually-hidden" for="trackInput">Номер заказа</label>
+            <input id="trackInput" value="DL-4821" autocomplete="off" spellcheck="false">
+            <button class="btn btn--accent" type="submit"><span>Отследить</span></button>
+          </form>
+          <p class="track__hint" data-reveal>Это демо — нажмите «Отследить» и посмотрите, как это выглядит</p>
+        </div>
+
+        <div class="tracker" data-reveal>
+          <div class="tracker__head"><span>Заказ <b id="trackNo">DL-4821</b></span><span id="trackEta">—</span></div>
+          <div class="tracker__map" aria-hidden="true">
+            <svg viewBox="0 0 400 160" preserveAspectRatio="none">
+              <path d="M0 40h400M0 80h400M0 120h400M80 0v160M180 0v160M300 0v160" stroke="rgba(242,239,230,.07)"/>
+              <path id="miniPath" d="M20 130 C 90 130 100 60 180 70 S 300 120 380 30" fill="none" stroke="rgba(242,239,230,.18)" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+              <path class="tracker__progress" d="M20 130 C 90 130 100 60 180 70 S 300 120 380 30" fill="none" stroke="#FF5A1F" stroke-width="4" stroke-linecap="round" pathLength="100"/>
+              <circle cx="20" cy="130" r="7" fill="#F2EFE6"/><circle cx="380" cy="30" r="7" fill="#FF5A1F"/>
+            </svg>
+          </div>
+          <ol class="tracker__steps" id="trackSteps">
+            <li><i></i><div><b>Заказ принят</b><small>Курьер назначен</small></div><time>14:02</time></li>
+            <li><i></i><div><b>Курьер забрал груз</b><small>Фото отправлено вам в SMS</small></div><time>14:19</time></li>
+            <li><i></i><div><b>В пути</b><small>Прибудет через 18 минут</small></div><time>14:21</time></li>
+            <li><i></i><div><b>Доставлено</b><small>Вручено лично, фото получателя</small></div><time>14:40</time></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TARIFFS ============ -->
+    <section class="section tariffs" id="tariffs">
+      <div class="container">
+        <div class="head">
+          <span class="head__num" data-reveal>03</span>
+          <h2 class="h2" data-reveal>Три скорости — одна цена без сюрпризов</h2>
+        </div>
+        <div class="tariffs__grid">
+          <article class="tariff" data-reveal>
+            <h3>К&nbsp;времени</h3>
+            <p>Доставим в выбранный интервал — от 1 часа. Удобно для подарков и встреч.</p>
+            <div class="tariff__price"><small>от</small> 490 <small>₽</small></div>
+            <ul><li>Интервал от 1 часа</li><li>Звонок за 15 минут</li><li>Бесплатное ожидание 15 мин</li></ul>
+            <a href="#order" class="btn btn--line btn--wide"><span>Выбрать</span></a>
+          </article>
+          <article class="tariff tariff--hot" data-reveal style="--d:.08s">
+            <span class="tariff__badge">Чаще всего</span>
+            <h3>Срочно</h3>
+            <p>Курьер выезжает сразу. Доставка по городу в среднем за 60 минут.</p>
+            <div class="tariff__price"><small>от</small> 790 <small>₽</small></div>
+            <ul><li>Выезд за 15 минут</li><li>Онлайн-отслеживание</li><li>Фото при вручении</li></ul>
+            <a href="#order" class="btn btn--accent btn--wide"><span>Выбрать</span></a>
+          </article>
+          <article class="tariff" data-reveal style="--d:.16s">
+            <h3>Сегодня</h3>
+            <p>Заберём и привезём в течение дня. Самый выгодный тариф для несрочного.</p>
+            <div class="tariff__price"><small>от</small> 390 <small>₽</small></div>
+            <ul><li>Доставка до 22:00</li><li>Можно несколько адресов</li><li>Скидки от 10 заказов</li></ul>
+            <a href="#order" class="btn btn--line btn--wide"><span>Выбрать</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW (pinned horizontal) ============ -->
+    <section class="how" id="how">
+      <div class="how__sticky">
+        <div class="container how__top">
+          <div class="head head--light">
+            <span class="head__num">04</span>
+            <h2 class="h2">Как это работает</h2>
+          </div>
+          <div class="how__progress" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="how__track">
+          <article class="panel">
+            <span class="panel__n">01</span>
+            <svg class="panel__icon" viewBox="0 0 120 120" aria-hidden="true"><rect x="30" y="12" width="60" height="96" rx="12"/><path d="M50 92h20"/><path d="M44 40h32M44 54h22"/></svg>
+            <h3>Заявка за минуту</h3>
+            <p>На сайте, по телефону или в мессенджере. Укажите адреса и что везём — цену назовём сразу.</p>
+          </article>
+          <article class="panel">
+            <span class="panel__n">02</span>
+            <svg class="panel__icon" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="44"/><path d="M60 30v30l20 12"/></svg>
+            <h3>Курьер через 15 минут</h3>
+            <p>Назначаем ближайшего водителя с подходящей машиной. Пришлём имя, номер авто и ссылку на трекинг.</p>
+          </article>
+          <article class="panel">
+            <span class="panel__n">03</span>
+            <svg class="panel__icon" viewBox="0 0 120 120" aria-hidden="true"><path d="M14 40h56v44H14zM70 54h18l16 16v14H70z"/><circle cx="34" cy="88" r="9"/><circle cx="88" cy="88" r="9"/></svg>
+            <h3>Аккуратно везём</h3>
+            <p>Груз застрахован. Хрупкое пакуем и фиксируем, документы — в отдельной папке.</p>
+          </article>
+          <article class="panel">
+            <span class="panel__n">04</span>
+            <svg class="panel__icon" viewBox="0 0 120 120" aria-hidden="true"><path d="M24 62l24 24 50-52"/></svg>
+            <h3>Вручаем лично</h3>
+            <p>Передаём получателю в руки, присылаем фото и подпись. Оплата картой, наличными или по счёту.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS ============ -->
+    <section class="section business" id="business">
+      <div class="container business__grid">
+        <div>
+          <div class="head">
+            <span class="head__num" data-reveal>05</span>
+            <h2 class="h2" data-reveal>Для бизнеса — как свой отдел доставки</h2>
+          </div>
+          <ul class="checks" data-reveal>
+            <li>Договор, счёт и закрывающие документы каждый месяц</li>
+            <li>Персональный менеджер и закреплённые курьеры</li>
+            <li>Приём наличных и оплата картой при получении</li>
+            <li>Интеграция с вашим сайтом, CRM и 1С</li>
+          </ul>
+          <a href="#order" class="btn btn--ink" data-reveal><span>Получить предложение</span></a>
+        </div>
+        <div class="bento">
+          <div class="bento__item bento__item--big" data-reveal><b data-count="320" data-suffix="+">0</b><span>компаний работают с нами</span></div>
+          <div class="bento__item bento__item--accent" data-reveal style="--d:.08s"><b data-count="98" data-suffix="%">0</b><span>доставок вовремя</span></div>
+          <div class="bento__item" data-reveal style="--d:.16s"><b data-count="140">0</b><span>водителей на линии</span></div>
+          <div class="bento__item bento__item--dark" data-reveal style="--d:.24s"><b data-count="57" data-suffix=" мин">0</b><span>средняя срочная доставка</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DRIVERS ============ -->
+    <section class="drivers" id="drivers">
+      <div class="container drivers__grid">
+        <div>
+          <span class="head__num head__num--ink" data-reveal>06</span>
+          <h2 class="drivers__title" data-reveal>Есть авто? Возите с нами.</h2>
+          <p class="drivers__lead" data-reveal>Свободный график, выплаты каждый день, заказы рядом с домом. Подходит легковой автомобиль, каблук или газель.</p>
+        </div>
+        <div class="earn" data-reveal>
+          <div class="earn__row"><label for="earnHours">Часов в день</label><output id="earnHoursOut">8</output></div>
+          <input type="range" id="earnHours" class="range" min="2" max="12" value="8">
+          <div class="earn__row"><label for="earnDays">Дней в неделю</label><output id="earnDaysOut">5</output></div>
+          <input type="range" id="earnDays" class="range" min="1" max="7" value="5">
+          <div class="earn__total"><small>Доход в месяц ≈</small><b><span id="earnOut">0</span> ₽</b></div>
+          <p class="earn__note">Расчёт примерный, для легкового авто. Зависит от района и количества заказов.</p>
+          <a href="#order" class="btn btn--ink btn--wide" data-driver><span>Стать водителем</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="head">
+          <span class="head__num" data-reveal>07</span>
+          <h2 class="h2" data-reveal>Говорят клиенты</h2>
+        </div>
+      </div>
+      <div class="rv-rows">
+        <div class="rv-row">
+          <div class="rv-track">
+            <figure class="rv"><blockquote>Нужно было срочно отвезти договор на подпись. Курьер был у офиса через 12 минут.</blockquote><figcaption><b>Ольга</b> · юрист</figcaption></figure>
+            <figure class="rv rv--accent"><blockquote>Возим через них запчасти клиентам каждый день. Ни одного потерянного заказа.</blockquote><figcaption><b>Автомагазин «Деталь»</b></figcaption></figure>
+            <figure class="rv"><blockquote>Заказала доставку торта к времени — привезли ровно к 19:00 и целым.</blockquote><figcaption><b>Мария</b> · частный заказ</figcaption></figure>
+            <figure class="rv rv--ink"><blockquote>Газель приехала за 40 минут, водитель помог загрузить плитку.</blockquote><figcaption><b>Игорь</b> · ремонт квартиры</figcaption></figure>
+          </div>
+        </div>
+        <div class="rv-row rv-row--rev">
+          <div class="rv-track">
+            <figure class="rv rv--ink"><blockquote>Удобно, что видно курьера на карте. Не нужно звонить и спрашивать «где вы».</blockquote><figcaption><b>Дмитрий</b> · менеджер</figcaption></figure>
+            <figure class="rv"><blockquote>Подключили к интернет-магазину, заказы уходят в доставку сами.</blockquote><figcaption><b>Магазин «Ремесло»</b></figcaption></figure>
+            <figure class="rv rv--accent"><blockquote>Цветы привезли свежими и с фото вручения. Мама была в восторге.</blockquote><figcaption><b>Алексей</b> · подарок</figcaption></figure>
+            <figure class="rv"><blockquote>Счёт и акты приходят вовремя, бухгалтерия довольна.</blockquote><figcaption><b>ООО «Сфера»</b></figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div class="head">
+          <span class="head__num" data-reveal>08</span>
+          <h2 class="h2" data-reveal>Частые вопросы</h2>
+        </div>
+        <div class="acc" data-reveal>
+          <div class="acc__item"><button class="acc__btn" aria-expanded="false">Что нельзя отправить?<i></i></button><div class="acc__body"><div><p>Запрещённые к обороту вещества, оружие, деньги в крупных суммах, животных и скоропортящиеся продукты без упаковки. Если сомневаетесь — спросите оператора.</p></div></div></div>
+          <div class="acc__item"><button class="acc__btn" aria-expanded="false">Что, если груз повредят?<i></i></button><div class="acc__body"><div><p>Каждый заказ застрахован на объявленную стоимость. Повреждение фиксируем по фото при приёме и вручении, компенсацию выплачиваем в течение 5 рабочих дней.</p></div></div></div>
+          <div class="acc__item"><button class="acc__btn" aria-expanded="false">Можно несколько адресов в одном заказе?<i></i></button><div class="acc__body"><div><p>Да, добавьте до 10 точек — построим оптимальный маршрут, и цена будет ниже, чем у отдельных заказов.</p></div></div></div>
+          <div class="acc__item"><button class="acc__btn" aria-expanded="false">Как оплатить?<i></i></button><div class="acc__body"><div><p>Картой или переводом по СБП, наличными курьеру, а для компаний — по счёту с закрывающими документами.</p></div></div></div>
+          <div class="acc__item"><button class="acc__btn" aria-expanded="false">Сколько ждёт курьер?<i></i></button><div class="acc__body"><div><p>15 минут ожидания бесплатно на каждом адресе, дальше — 10 ₽ за минуту.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ORDER ============ -->
+    <section class="section order" id="order">
+      <div class="container order__grid">
+        <div>
+          <div class="head head--light">
+            <span class="head__num" data-reveal>09</span>
+            <h2 class="h2 h2--xl" data-reveal>Куда везём?</h2>
+          </div>
+          <p class="lead" data-reveal>Оставьте заявку — перезвоним за 2 минуты и назовём точную цену.</p>
+          <a href="tel:+79000000000" class="order__phone" data-reveal>+7 (900) 000-00-00</a>
+        </div>
+
+        <form class="form" id="orderForm" novalidate data-reveal>
+          <div class="form__route">
+            <label class="field"><input type="text" name="from" placeholder=" " autocomplete="off"><span>Откуда</span></label>
+            <label class="field"><input type="text" name="to" placeholder=" " autocomplete="off"><span>Куда</span></label>
+            <i class="form__route-line" aria-hidden="true"></i>
+          </div>
+          <div class="form__row">
+            <label class="field"><input type="text" name="name" placeholder=" " autocomplete="name" required><span>Имя</span></label>
+            <label class="field"><input type="tel" name="phone" placeholder=" " autocomplete="tel" inputmode="tel" required><span>Телефон</span></label>
+          </div>
+          <label class="field"><textarea name="comment" rows="3" placeholder=" "></textarea><span>Что везём</span></label>
+          <label class="check">
+            <input type="checkbox" name="consent" required>
+            <span class="check__ui" aria-hidden="true"></span>
+            <span class="check__text">Я даю <a href="#privacy" class="link" data-open="privacy">согласие на обработку персональных данных</a> и принимаю <a href="#privacy" class="link" data-open="privacy">политику конфиденциальности</a></span>
+          </label>
+          <button type="submit" class="btn btn--accent btn--wide"><span>Отправить заявку</span></button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__big" aria-hidden="true">ДОВЕЗУ</div>
+      <div class="footer__grid">
+        <div><h4>Связь</h4><a href="tel:+79000000000">+7 (900) 000-00-00</a><a href="mailto:hello@example.ru">hello@example.ru</a><span>Ежедневно 7:00–23:00</span></div>
+        <div><h4>Разделы</h4><a href="#tariffs">Тарифы</a><a href="#business">Бизнесу</a><a href="#drivers">Водителям</a></div>
+        <div><h4>Документы</h4><button type="button" class="link" data-open="privacy">Политика конфиденциальности</button><button type="button" class="link" data-open="privacy" data-anchor="cookies">Политика cookie</button><button type="button" class="link" id="cookieSettingsLink">Настройки cookie</button></div>
+        <div class="footer__legal"><p>ИП Иванов Иван Иванович<br>ИНН 000000000000 · ОГРНИП 000000000000000</p><p>Информация на сайте не является публичной офертой (ст. 437 ГК РФ).</p></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> ДОВЕЗУ</span>
+        <a href="https://studio-psi-olive.vercel.app/" target="_blank" rel="noopener">Сайт разработан в студии Сайтика</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#order" class="callbar">Оформить доставку</a>
+
+  <!-- ============ COOKIE ============ -->
+  <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Использование cookie" hidden>
+    <p><b>Про cookie.</b> Мы используем необходимые cookie для работы сайта, а аналитические — только с вашего согласия. <button type="button" class="link" data-open="privacy" data-anchor="cookies">Подробнее</button></p>
+    <div class="cookie__opts" id="cookieOpts" hidden>
+      <label class="switch"><input type="checkbox" checked disabled><span class="switch__ui"></span>Необходимые</label>
+      <label class="switch"><input type="checkbox" id="ckAnalytics"><span class="switch__ui"></span>Аналитика</label>
+    </div>
+    <div class="cookie__btns">
+      <button class="btn btn--ink btn--sm" id="ckAccept"><span>Принять все</span></button>
+      <button class="btn btn--line btn--sm" id="ckNecessary"><span>Только необходимые</span></button>
+      <button class="link" id="ckSettings">Настроить</button>
+    </div>
+  </div>
+
+  <!-- ============ PRIVACY ============ -->
+  <dialog class="modal" id="privacy" aria-labelledby="privacyTitle">
+    <div class="modal__in">
+      <button class="modal__close" data-close aria-label="Закрыть">×</button>
+      <h2 id="privacyTitle">Политика обработки персональных данных</h2>
+      <p>Политика составлена в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных оператором — ИП Иванов И. И. (ИНН 000000000000), далее — Оператор.</p>
+      <h3>1. Какие данные мы обрабатываем</h3>
+      <p>Имя, телефон, адреса отправления и доставки, описание груза, а также технические данные: cookie, IP-адрес, сведения о браузере.</p>
+      <h3>2. Цели обработки</h3>
+      <p>Приём и выполнение заказа на доставку, связь с клиентом, отбор водителей-партнёров и — при вашем согласии — анализ посещаемости сайта.</p>
+      <h3>3. Правовое основание</h3>
+      <p>Ваше согласие, которое вы даёте, отмечая чекбокс в форме. Отозвать его можно в любой момент, написав на hello@example.ru.</p>
+      <h3>4. Хранение и защита</h3>
+      <p>Данные хранятся на серверах на территории РФ не дольше, чем требуется для целей обработки, и не передаются третьим лицам, кроме курьера, выполняющего ваш заказ, и случаев, предусмотренных законом.</p>
+      <h3>5. Ваши права</h3>
+      <p>Вы можете получить сведения об обработке ваших данных, потребовать их уточнения, блокирования или удаления.</p>
+      <h3 id="cookies">6. Cookie</h3>
+      <p>Необходимые cookie обеспечивают работу сайта и запоминают ваш выбор. Аналитические cookie (например, Яндекс Метрика) включаются только после согласия. Изменить выбор можно по ссылке «Настройки cookie» в подвале сайта.</p>
+      <p class="modal__muted">Редакция от 17.11.2026</p>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
