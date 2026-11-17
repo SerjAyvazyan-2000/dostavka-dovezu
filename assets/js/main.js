@@ -74,6 +74,39 @@
   }), { rootMargin: "-45% 0px -50% 0px" });
   $$("main section[id]").forEach((s) => navIO.observe(s));
 
+  /* ---------- плавный скролл по якорным ссылкам ----------
+     Своя анимация (easeInOutCubic) — одинаково плавно во всех браузерах.
+     Отступ под фиксированную шапку берётся автоматически. */
+  let scrollRaf = null;
+  const stopScroll = () => { if (scrollRaf) { cancelAnimationFrame(scrollRaf); scrollRaf = null; } };
+  ["wheel", "touchstart", "keydown"].forEach((ev) => addEventListener(ev, stopScroll, { passive: true }));
+  const smoothTo = (targetY) => {
+    stopScroll();
+    const startY = scrollY, dist = targetY - startY;
+    if (reduce || Math.abs(dist) < 2) { scrollTo(0, targetY); return; }
+    const dur = Math.min(1400, Math.max(600, Math.abs(dist) * 0.35)), t0 = performance.now();
+    const ease = (t) => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    const step = (t) => {
+      const k = Math.min(1, (t - t0) / dur);
+      scrollTo(0, startY + dist * ease(k));
+      scrollRaf = k < 1 ? requestAnimationFrame(step) : null;
+    };
+    scrollRaf = requestAnimationFrame(step);
+  };
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || a.hasAttribute("data-open") || e.defaultPrevented) return;
+    const id = a.getAttribute("href");
+    const target = id === "#" || id === "#top" ? document.body : document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    closeMenu();
+    const offset = $("#header").offsetHeight + 10;
+    const y = target === document.body ? 0 : target.getBoundingClientRect().top + scrollY - offset;
+    smoothTo(Math.max(0, y));
+    if (history.replaceState) history.replaceState(null, "", id === "#" ? location.pathname : id);
+  });
+
   /* ---------- скролл: шапка, параллакс, горизонтальный блок ---------- */
   const header = $("#header"), callbar = $(".callbar");
   const para = $$("[data-parallax]");

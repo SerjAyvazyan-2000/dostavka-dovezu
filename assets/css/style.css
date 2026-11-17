@@ -30,7 +30,6 @@
 /* ---------- reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 10px); }
-html:focus-within { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 img, svg { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
@@ -519,7 +518,6 @@ ul, ol { padding: 0; list-style: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  html:focus-within { scroll-behavior: auto; }
   .js [data-reveal] { opacity: 1; transform: none; }
   .word > span { transform: none; }
   .route__line { stroke-dashoffset: 0; }
